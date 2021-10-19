@@ -1,1 +1,26 @@
-Olá meu nome é Lucca
+Principais comandos Git
+
+1 - git init
+Cria um reósitório local. Crie uma pasta para armazenar o repositório Git com um nome a sua escolha. Clique com o botão direito do mouse na pasta e em seguida clique em Git Bash. Como Git Bash aberto, escreva o comando "git init" para dar inicio ao repositório naquela pasta.
+
+2 - git add
+Adiciona os arquivos da pasta no repositório Git.
+Dica: Você pode adicionar todos um a um usando "git add arquivo1, git add arquivo2... ou apenas usar "git add ." e adicionar todos ao mesmo tempo
+
+3 - Commit
+Pacote de alterações no repositório. Usando "git commit -m "Listando arquivos teste", você escreve dentro das aspas um título explicativo sobre essa "versão" (commit)
+
+Os commits do seu repositório Git contam a história do seu projeto.
+
+4 - Log/reflog
+Com o comando "git log", você pode visualizar o que vem sendo feito em uma determinada branch ou avaliar as alterações de um arquivo em especial. Isso pode ser útil para você entender como alguma parte do código vem sendo evoluída, ou pode ajudar a avaliar os commits locais antes de dar git push.
+Para ter acesso ao histórico de versões use  comando "git reflog"
+
+5 - git push
+Atualiza/Cria o repositório hospedado na plataforma GitHub 
+Ao final do comando escreva apenas "git push"
+
+6 - git reset
+Para voltar a uma versão anterior você deve usar o "git reflog" para ter acesso ao histórico de versões e copiar o id (sequencia de numeros e letras em amarelo que individualizam a versão), e logo depois usar o comando "git reset --hard + id. Supondo que o id seja 31449, o comando ficaria: git reset --hard 31449. 
+
+Obs: Essa alteração é feita localmente. Para salvar na nuvem use o git push.
